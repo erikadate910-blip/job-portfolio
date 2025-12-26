@@ -241,17 +241,6 @@ section a {
     padding: 10px 0;
 }
 
-.seisakubutu {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.seisakubutu2 {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
 
 .seisakubutu ul {
     width: 220px;

@@ -1,0 +1,572 @@
+@charset "utf-8";
+
+body {
+  width: 375px;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  
+}
+
+img {
+  padding: 30px 12px 30px;
+}
+
+hi {
+  width: 100%;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    height: 28px;
+    margin: 20px auto;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+p {
+    font-size: 14px;
+}
+
+
+
+.subconcept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subconcept::before, 
+.subconcept::after {
+  border-top: 1px solid;/* 線の太さ、種類、色 */
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.subconcept::before {
+  margin-right: 1em; /* テキストの右隣の余白 */
+}
+.subconcept::after {
+  margin-left: 1em; /* テキストの左隣の余白 */
+}
+
+.concept {
+  width: 375px;
+}
+
+.concept-text {
+  width: 100%;
+  margin: auto 12px;
+  line-height: 28px;
+}
+
+.subservice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subservice::before,
+.subservice::after {
+  border-top: 1px solid;/* 線の太さ、種類、色 */
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.subservice::before{
+  margin-right: 1em; /* テキストの右隣の余白 */
+}
+.subservice::after {
+  margin-left: 1em; /* テキストの左隣の余白 */
+}
+
+.more1 {
+  text-align: right;
+  margin: auto 12px;
+}
+.more2 {
+  text-align: right;
+  margin: auto 12px;
+}
+.more3 {
+  text-align: right;
+  margin: auto 12px;
+}
+
+.yokusitu-text {
+  width: 100%;
+  margin: auto 12px;
+  line-height: 28px;
+}
+
+.riving-text {
+  width: 100%;
+  margin: auto 12px;
+  line-height: 28px;
+}
+
+.kittin-text {
+  width: 100%;
+  margin: auto 12px;
+  line-height: 28px;
+}
+
+.subflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b71b26;
+  margin-bottom: 20px;
+}
+.subflow::before,
+.subflow::after {
+  border-top: 1px solid;/* 線の太さ、種類、色 */
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.subflow::before {
+  margin-right: 1em; /* テキストの右隣の余白 */
+}
+.subflow::after {
+  margin-left: 1em; /* テキストの左隣の余白 */
+}
+
+.FLOW {
+  width: 375px;
+  
+}
+.FLOW li {
+    background-color: #333;
+    color: #fff;
+    margin: 0px 37.5px;
+    line-height: 32px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+.FLOW p {
+    color: #b71b26;
+    text-align: center;
+}
+.FLOWgazou {
+  width: 16px;
+  height: 32px;       /* 表示したい高さだけに設定 */
+  overflow: hidden;    /* はみ出し非表示 → 実際に高さが詰まる */
+  margin: 0;           /* 行間を詰めたいなら外側余白も調整 */
+  text-align: center;
+}
+.FLOW img {
+  width: 100%;
+  
+  top: -20px;          /* 上を20pxカット（下方向にずらす） */
+  object-fit: cover;   /* 枠に合わせてトリミング */
+  background-color: #333;
+  }
+
+
+input[type="text"],
+textarea {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    height: 30px;
+}
+input[type="tel"],
+textarea {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #ffffff;
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+input:focus {
+  outline: 2px solid blue; /* 枠線の太さと色を変更 */
+}
+
+.address-field {
+  position: relative;
+  display: flex;         /* ←おすすめ！要素を縦中央揃えにできる */
+  align-items: center;   /* ←縦中央に整列 */
+  gap: 6px;              /* 〒と入力欄の間隔を調整 */
+  width: 125px; /* 入力欄と同じ幅でOK */
+}
+.address-field .postal-mark {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.address-field input[type="tel"] {
+  width: 125px;
+  box-sizing: border-box;
+  margin: 0;
+  height: 30px;          /* ←入力欄の高さを固定（任意） */
+}
+
+.qa {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qa div {
+  margin: 24px auto;
+}
+
+.subqa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #223e69;
+}
+
+.subqa::before,
+.subqa::after {
+  border-top: 1px solid;/* 線の太さ、種類、色 */
+  content: "";
+  width: 3em; /* 線の長さ */
+  color: #223e69;
+}
+.subqa::before {
+  margin-right: 1em; /* テキストの右隣の余白 */
+}
+.subqa::after {
+  margin-left: 1em; /* テキストの左隣の余白 */
+}
+
+.qa {
+  width: 344px;
+}
+.q1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;      /* 縦方向の中央揃えにする */
+  gap: 10px; /* アイコンの間隔 */
+  text-align: left;
+  
+}
+.a1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;      /* 縦方向の中央揃えにする */
+  gap: 10px; /* アイコンの間隔 */
+  text-align: left;
+}
+
+.q2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;      /* 縦方向の中央揃えにする */
+  gap: 10px; /* アイコンの間隔 */
+  text-align: left;
+}
+
+.a2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;      /* 縦方向の中央揃えにする */
+  gap: 10px; /* アイコンの間隔 */
+  text-align: left;
+}
+
+.q-icon {
+  width: 36px;              /* 円の横幅 */
+  height: 36px;             /* 円の縦幅 */
+  background-color: #333;   /* 背景色（黒っぽいグレー） */
+  color: white;             /* 文字色 */
+  border-radius: 50%;       /* 丸くする */
+  display: flex;            /* 中央寄せに便利 */
+  align-items: center;      /* 縦方向の中央寄せ */
+  justify-content: center;  /* 横方向の中央寄せ */
+  font-size: 20px;          /* ← 文字の大きさを20pxに設定 */
+  font-weight: bold;        /* 太字にする（任意） */
+  font-family: "Times New Roman", serif; /* フォント指定（任意） */
+  flex-shrink: 0;           /* Flexbox内でもサイズが縮まらないよう固定 */
+  margin-bottom: auto; /* 下のスペースを自動で広げる */
+}
+.a-icon {
+  width: 36px;              /* 円の横幅 */
+  height: 36px;             /* 円の縦幅 */
+  background-color: #b71b26;   /* 背景色 */
+  color: white;             /* 文字色 */
+  border-radius: 50%;       /* 丸くする */
+  display: flex;            /* 中央寄せに便利 */
+  align-items: center;      /* 縦方向の中央寄せ */
+  justify-content: center;  /* 横方向の中央寄せ */
+  font-size: 20px;          /* ← 文字の大きさを20pxに設定 */
+  font-weight: bold;        /* 太字にする（任意） */
+  font-family: "Times New Roman", serif; /* フォント指定（任意） */
+  flex-shrink: 0;           /* Flexbox内でもサイズが縮まらないよう固定 */
+  margin-bottom: auto; /* 下のスペースを自動で広げる */
+}
+.contactSec {
+  background-color: #e5e5e5;
+}
+.subcontact {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.subcontact::before,
+.subcontact::after {
+  border-top: 1px solid;/* 線の太さ、種類、色 */
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.subcontact::before {
+  margin-right: 1em; /* テキストの右隣の余白 */
+}
+.subcontact::after {
+  margin-left: 1em; /* テキストの左隣の余白 */
+}
+
+.contact { 
+  width: 375px;
+  height: 680px;
+  margin: 40px auto;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  
+  
+}
+.contact p {
+  margin: 24px auto;
+  width: 351px;
+  height: 30px;
+  text-align: center
+}
+.required {
+  margin-left:  .3em;
+  color: #ffffff;
+  font-size: .7em;
+  padding: 4px 10px;
+  background-color: #b71b26;
+  border-radius: 10px;
+}
+
+.contact textarea[name="message"] {
+  height: 120px;
+  margin-bottom: 24px;
+  border: none;         /* 外枠を消す */
+  
+}
+ .contact input[type="submit"] {
+  margin-top: 120px;
+   border: none;         /* 外枠を消す */
+ }
+
+.kuuhaku {
+  position: relative;       /* 子要素を絶対配置する基準 */
+  width: 375px;
+} 
+.kuuhaku textarea[name="message"] {
+  width: 375px;
+  height: 150px;
+  z-index: -1;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;             /* 任意でサイズ変更禁止 */
+  
+}
+
+.kuuhaku img {
+  position: absolute;       /* 重ねるために絶対位置指定 */
+  bottom: 5px;              /* 下からの距離（微調整可） */
+  right: 5px;               /* 右からの距離（微調整可） */
+  width: 30px;
+  height: 15px;
+  pointer-events: none;     /* 画像の上でも入力可能にする */
+  
+}
+
+
+
+header {
+  width: 375px;
+  position: relative
+}
+
+/* 以下に参考サイトのメニュー用CSSを貼り付ける */
+/* メニューを画面上部に固定表示しています */
+.gMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+/* メニューアイコンを画面右上に固定しています */
+.gMenu .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding-top: 5px;
+  height: 12px;
+}
+/* メニューアイコン（三本線）の真ん中の線です */
+.gMenu .menu-icon .navicon {
+  background: #ffc107; /* 色は自由に変更可能です */
+  display: block;
+  height: 2px; /* 太さ */
+  width: 31px; /* 長さ */
+  position: relative;
+  transition: background .4s ease-out; /* 形が変わる時のアニメーション */
+}
+/* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #ffc107; /* 色は自由に変更可能です */
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .4s ease-out; /* 形が変わる時のアニメーション */
+  width: 100%;
+}
+.gMenu .menu-icon .navicon::before {top: 10px;} /* 位置を上にずらしています */
+.gMenu .menu-icon .navicon::after {top: -10px;} /* 位置を下にずらしています */
+/* 表示されるメニューです */
+.gMenu .menu {
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
+  max-height: 0; /* ★最初は高さを0にして非表示状態に */
+  transition: max-height .6s; /* 表示されるときのアニメーション */
+  text-align: center;
+}
+/* メニュー部分のデザインです */
+.gMenu .menu li:first-of-type {
+  padding-top: 50px;
+}
+.gMenu .menu li a {
+  display: block;
+  padding: 24px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.gMenu .menu li a:hover {
+  background-color: #f4f4f4;
+  text-decoration: underline double;
+}
+/* チェックボックスは常に非表示です */
+.gMenu .menu-btn {
+  display: none;
+}
+/* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+.gMenu .menu-btn:checked ~ .menu {
+  max-height: 422.5px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+  transition: max-height .6s;
+}
+/* メニューボタンの中央の線を非表示に */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+
+/* メニューボタンの上下の線を45度傾けて✕印を作ります */
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+.gMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+/* サイトに合わせてオリジナルカスタマイズ */
+.gMenu .menu-icon {
+  top: 26px;
+}
+.gMenu .menu-icon .navicon,
+.gMenu .menu-icon .navicon::before,
+.gMenu .menu-icon .navicon::after {
+  background: #333333;
+}
+
+/* 親要素 (白い枠) のスタイル */
+.white-container {
+    /* 背景を白に設定 */
+    background-color: white; 
+    /* 枠線と影をつけると、よりそれらしく見えます */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    /* 高さと幅を指定（例として） */
+    width: 375px; 
+    height: 150px; 
+    /* 見やすいようにマージンを設定 */
+    margin: 50px auto; 
+    
+    /* 子要素の absolute 配置の基準とするために必須 */
+    position: relative; 
+    
+    
+    /* 画像のイメージに合わせてオーバーフローを隠す */
+    overflow: hidden; 
+}
+
+
+
+/* スクロールアップボタンのスタイル */
+.scroll-up-button-visual {
+    /* 親要素に対して絶対配置 */
+    position: absolute; 
+    /* 右端と下端からの位置を指定 (黒い帯の上に配置されるように調整) */
+    right: 0;
+    bottom: 0; 
+    
+    /* ボタンのサイズ (画像の比率に合わせて調整) */
+    width: 46px; 
+    height: 46px; 
+    
+    /* 背景色と矢印の色 */
+    background-color: #333;
+    color: white; 
+    
+    /* 矢印を中央に配置するための設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* 矢印のスタイル */
+.arrow-icon {
+    /* 要素のサイズはボーダーのサイズで決める */
+    width: 25px; 
+    height: 25px; 
+    
+    /* 矢印の線の太さ (画像を忠実に再現するため、細めに設定) */
+    border: 2px solid white; 
+    
+    /* 上と左のボーダーだけを使用 */
+    border-right: none; 
+    border-bottom: none; 
+    
+    /* 要素を45度回転させて「へ」の字にする */
+    transform: rotate(45deg);
+}
+footer {
+    background-color: #333;
+    color: #ffffff;
+    width: 375px;
+    height: 45px;
+    font-size: 12px;
+    padding: 18px 100px;   
+}
+@media screen and (min-width: 768px) {
+	/* 768px以上に適用されるCSS（PC用） */
+}
+
+.onlySP {
+  display: none;
+}
